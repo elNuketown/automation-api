@@ -1,0 +1,10 @@
+localizacao:
+  cep: '05171-000'
+  logradouro: 'Avenida Santa Mônica'
+  complemento: ''
+  bairro: 'Jardim Santa Mônica'
+  localidade: 'São Paulo'
+  uf: 'SP'
+  unidade: ''
+  ibge: '3550308'
+  gia: '1004'

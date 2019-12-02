@@ -1,0 +1,145 @@
+[
+  {
+    "uri": "features/specifications/consulta_cep.feature",
+    "id": "consulta-de-cep-na-api-via-cep",
+    "keyword": "Funcionalidade",
+    "name": "Consulta de CEP na API Via Cep",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@consulta_cep",
+        "line": 2
+      },
+      {
+        "name": "@vinicios_vicente",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "consulta-de-cep-na-api-via-cep;consulta-de-cep;;2",
+        "keyword": "Esquema do Cenário",
+        "name": "Consulta de CEP",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consulta_cep",
+            "line": 2
+          },
+          {
+            "name": "@vinicios_vicente",
+            "line": 3
+          },
+          {
+            "name": "@consulta_cep",
+            "line": 6
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuir um cep do tipo \"valido\"",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "enviar a requisição de consulta de cep na API Via Cep",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2936687000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo obter um retorno \"valido\" no API Via Cep",
+            "line": 10,
+            "output": [
+              "IBGE: 3550308"
+            ],
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2133800
+            }
+          }
+        ]
+      },
+      {
+        "id": "consulta-de-cep-na-api-via-cep;consulta-de-cep;;3",
+        "keyword": "Esquema do Cenário",
+        "name": "Consulta de CEP",
+        "description": "",
+        "line": 15,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consulta_cep",
+            "line": 2
+          },
+          {
+            "name": "@vinicios_vicente",
+            "line": 3
+          },
+          {
+            "name": "@consulta_cep",
+            "line": 6
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "possuir um cep do tipo \"inválido\"",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47100
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "enviar a requisição de consulta de cep na API Via Cep",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520199000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo obter um retorno \"inválido\" no API Via Cep",
+            "line": 10,
+            "match": {
+              "location": "features/steps_definitions/via_cep_step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1542400
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
